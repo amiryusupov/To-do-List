@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Nunito;
+}
+
+body {
+    background-color: #374151;
+}
+
+.container {
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.todo__row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.todo__title {
+    font-size: 40px;
+    font-weight: 600;
+    color: #000000;
+}
+.todo__input {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}
+.todo__input-box {
+    width: 45%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F2937;
+}
+.todo__input-box input {
+    width: 91%;
+    height: 100%;
+    border: none;
+    background-color: #1F2937;
+    color: #ffffff;
+}
+.todo__input-box input:hover, .todo__input-box input:focus {
+    outline: none;
+    background-color: #1F2937;
+}
+.todo__input-box input[type=text] {
+    padding: 0 0 0 10px;
+}
+.todo__input-btn {
+    padding: 7px 15px;
+    background-color: #00b0ff;
+    border: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 4px;
+    color: #fafafa;
+    margin-right: 10px;
+}
+.todo__value {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.todo__value-title {
+    font-size: 30px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 15px;
+}
+.todo__value-box {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: #111827;
+    padding: 10px 10px;
+    border-radius: 10px;
+    word-break: break-all;
+    margin-bottom: 15px;
+}
+.todo__value-box:last-child {
+    margin-bottom: 70px;
+}
+.todo__value-box-text {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    height: auto;
+    background-color: #111827;
+    color: #ffffff;
+    border: none;
+}
+.todo__value-box-text:hover, .todo__value-box-text:focus {
+    outline: none;
+}
+.todo__value-box-text[type=text] {
+    padding: 0 0 0 10px;
+}
+.delete {
+    padding: 7px 10px;
+    background-color: #00b0ff;
+    border: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-left: 5px;
+    border-radius: 4px;
+    color: #fafafa;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+@media screen and (max-width: 800px) {
+    .todo__input-box {
+        width: 100%;
+    }
+    .todo__value-box {
+        width: 100%;
+    }
+    .todo__value-box-text {
+        width: 70%;
+    }
+}
